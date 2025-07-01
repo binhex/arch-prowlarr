@@ -18,7 +18,6 @@ Latest pre-release Prowlarr release from Arch Linux AUR.
 
 ```bash
 docker run -d \
-
     -p 9696:9696 \
     --name=<container name> \
     -v <path for config files>:/config \
@@ -26,9 +25,7 @@ docker run -d \
     -e UMASK=<umask for created files> \
     -e PUID=<uid for user> \
     -e PGID=<gid for user> \
-
     binhex/arch-prowlarr
-
 ```
 
 Please replace all user variables in the above command defined by <> with the
@@ -42,7 +39,6 @@ correct values.
 
 ```bash
 docker run -d \
-
     -p 9696:9696 \
     --name=prowlarr \
     -v /apps/docker/prowlarr:/config \
@@ -50,9 +46,7 @@ docker run -d \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-
     binhex/arch-prowlarr
-
 ```
 
 ## Notes
@@ -62,7 +56,6 @@ for the user you want to run the container as:-
 
 ```bash
 id <username>
-
 ```
 
 ___
